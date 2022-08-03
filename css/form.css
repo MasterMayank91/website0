@@ -1,0 +1,58 @@
+#comment
+{
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-content: center;
+}
+#comment > form[name="comment"]
+{
+    padding: 1rem;
+    width: 500px;
+    height:600px;
+    box-shadow: 5px 6px 10px var(--dark);
+    border-radius: 0.5rem;
+    display: grid;
+    grid-gap:10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 5fr 1fr;
+}
+#comment > form[name="comment"] h4
+{
+    font:bold 20px 'calibri';
+    text-align: center;
+}
+.fld
+{
+    padding: 1rem;
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid var(--dark);
+    border-radius: 0.5rem;
+}
+.fld:focus
+{
+    border-color: var(--fg);
+}
+textarea::-webkit-scrollbar
+{
+    background: var(--light);
+}
+textarea::-webkit-scrollbar-thumb
+{
+    background:var(--fg);
+}
+#submit_btn
+{
+    width: 100%;
+    padding: 1rem;
+    font-size: 18px;
+    color:var(--light);
+    background: var(--lrg);
+    border-radius: 0.5rem;
+}
+#submit_btn:hover
+{
+    transition: all linear 1s;
+    background:var(--drg);
+}

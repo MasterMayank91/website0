@@ -1,0 +1,42 @@
+
+/*Preloader of RAINBOW*/
+
+#preloader
+{
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	z-index: 12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#preloader .loader
+{
+	width: 500px;
+	height: 500px;
+	font:3rem arial;
+	color:crimson;
+	position: absolute;
+	z-index: 13;
+	line-height: 500px;
+	text-align: center;
+}
+.loading
+{
+	width: 500px;
+	height: 500px;
+	border-radius:50%;
+	border-right:5px solid #234efe;
+	position:absolute;
+	top:calc( 50% - 250px );
+	left:calc( 50% - 250px );
+	z-index: 15;
+	animation: round 2s linear infinite;
+}
+@keyframes round
+{
+	from{	transform: rotate(0deg);border-color: cyan;	}
+	to{		transform: rotate(360deg);border-color: lime;	}
+}
